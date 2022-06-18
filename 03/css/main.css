@@ -1,0 +1,345 @@
+.main_vis {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main_vis img {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 60px;
+}
+.main_vis .swiper-pagination {
+  text-align: right;
+  padding: 0 30px;
+  color: #fff;
+}
+.main_vis .txt_wrap {
+  position: absolute;
+  bottom: 50px;
+  left: 25px;
+  color: #fff;
+}
+.main_vis .txt_wrap span {
+  display: block;
+  font-size: 13px;
+}
+.main_vis .txt_wrap strong {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 23px 0;
+}
+.product_area {
+}
+.product_area strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 50px 0;
+  text-align: center;
+  padding: 0 15px;
+}
+.product_area .product_search {
+  margin: 0 15px;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+.product_area .product_search input {
+  display: inline-block;
+  border: unset;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  height: 50px;
+  float: left;
+  color: #999999;
+  padding: 0 40px 0 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+.product_area .product_search i {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.product_area .product_list {
+  overflow: hidden;
+  margin: 0 15px;
+}
+.product_area .product_list div {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+.product_area .product_list div img {
+  width: 100%;
+  height: 100%;
+}
+.product_area .product_list div .txt_area {
+  bottom: 30px;
+  left: 0;
+  position: absolute;
+  color: #fff;
+  margin-left: 10px;
+}
+.product_area .product_list div .txt_area strong {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.product_area .product_list div .txt_area p {
+  font-size: 10px;
+  text-decoration: underline;
+}
+.product_area .product_best {
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 0 15px;
+  overflow: hidden;
+  position: relative;
+}
+.product_area .product_best strong {
+  margin-bottom: 30px;
+}
+.product_area .product_best .wrap {
+}
+.product_area .product_best img {
+  width: 100%;
+  height: 100%;
+}
+.product_area .product_best .swiper-pagination {
+  bottom: 0;
+  top: unset;
+}
+:root {
+  --swiper-theme-color: #f06731;
+}
+
+/* collection_area */
+
+.collection_area {
+  width: 100%;
+}
+.collection_area .wrap {
+  width: 100%;
+  overflow: hidden;
+  background: url(../images/collection_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.collection_area .wrap .tit_wrap {
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  width: 100%;
+  color: #fff;
+  padding: 50px 15px;
+}
+.collection_area .wrap .tit_wrap span {
+  font-size: 25px;
+}
+.collection_area .wrap .tit_wrap p {
+  margin-top: 15px;
+}
+.collection_area .wrap .product_wrap {
+  padding: 0 15px;
+  width: 100%;
+  overflow: hidden;
+}
+.collection_area .wrap .product_wrap .product_item {
+  float: left;
+}
+.collection_area .wrap .img_wrap {
+  background: #fff;
+}
+.collection_area .wrap .img_wrap img {
+  width: 100%;
+  height: 100%;
+}
+.collection_area .wrap .txt_wrap {
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  background: #fff;
+  height: 100px;
+  padding: 10px;
+  font-size: 13px;
+  line-height: 20px;
+  position: relative;
+}
+.collection_area .wrap .txt_wrap strong {
+  font-weight: 500;
+}
+
+.collection_area .wrap .txt_wrap span {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+}
+.collection_area .more {
+  color: #fff;
+  text-align: center;
+  margin-top: 25px;
+  height: 50px;
+}
+.collection_area .more span {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+/* new_area */
+.new_area {
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 15px;
+  position: relative;
+}
+.new_area h2 {
+  font-size: 25px;
+}
+.new_area .gnb {
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.new_area .gnb li {
+  float: left;
+  margin-right: 18px;
+  color: #999999;
+  text-align: center;
+  font-size: 15px;
+}
+.new_area .gnb li.on {
+  color: #000;
+}
+.new_con_wrap {
+  position: relative;
+}
+.new_con_wrap .new_con {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.new_con_wrap .new_con.on {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+}
+.new_wrap {
+  overflow: hidden;
+}
+.new_wrap .new_item {
+  float: left;
+  width: calc(50% - 10px);
+}
+.new_wrap .new_item:nth-child(2n) {
+  float: right;
+}
+.new_wrap .new_item .img_wrap {
+}
+.new_wrap .new_item .img_wrap img {
+  width: 100%;
+  height: 100%;
+}
+.new_wrap .new_item .txt_wrap {
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  background: #fff;
+  height: 100px;
+  padding: 10px 10px 10px 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+.new_wrap .new_item .txt_wrap em {
+  color: #999999;
+}
+.new_wrap .new_item .txt_wrap p {
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+.new_wrap .new_item .txt_wrap span {
+}
+.new_wrap .new_item .txt_wrap span p {
+  margin-top: 10px;
+}
+
+/* media */
+
+.media_area {
+  width: 100%;
+  text-align: center;
+  padding: 50px 20px 50px;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+}
+.media_area strong {
+  display: block;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.media_area p {
+  font-size: 13px;
+  color: #999999;
+  margin-top: 20px;
+}
+.media_area .iframe_wrap {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.media_area video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* sns_area */
+
+.runway_area {
+  width: 100%;
+  background: #f7f7f7;
+  padding: 50px 15px;
+  overflow: hidden;
+}
+.runway_area .tit_wrap {
+  text-align: center;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+}
+.runway_area .tit_wrap .img_wrap {
+  width: 200px;
+  margin: 0 auto;
+}
+.runway_area .tit_wrap img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.runway_area .tit_wrap p {
+  font-size: 13px;
+}
+.runway_area .img_wrap {
+  margin-top: 25px;
+}
+.runway_area .img_wrap div {
+  float: left;
+  width: calc((100% - 20px) / 3);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.runway_area .img_wrap div:nth-child(3n) {
+  margin-right: 0;
+}
+.runway_area .img_wrap div img {
+  width: 100%;
+  height: 100%;
+}

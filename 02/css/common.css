@@ -1,0 +1,26 @@
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.blind {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+.sc_event {
+  opacity: 1;
+}
+.item {
+  /* transform: scale(0.8);
+  width: 400px;
+  font-size: 0px;
+  position: relative;
+  left: 50%;
+  cursor: pointer;
+  margin-top: 0px;
+  transition: opacity 2s ease; */
+}
