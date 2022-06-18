@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/20187b4aaf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header_wrap">
+        <h1 class="main_logo">
+          <a href=""></a><span class="blind">로고</span>
+        </h1>
+        <nav class="gnb">
+          <ul class="gnb_wrap">
+            <li>
+              <a href="#">스토어 추천 제품</a>
+              <ul class="sub_gnb">
+                <li><a href="#">추천 제품</a></li>
+                <li><a href="#">선물 제안</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">제품</a>
+              <ul class="sub_gnb">
+                <li><a href="#">이어폰</a></li>
+                <li><a href="#">헤드셋</a></li>
+                <li><a href="#">스피커</a></li>
+                <li><a href="#">Etc.</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">기획전</a>
+              <ul class="sub_gnb">
+                <li><a href="#">혜택존</a></li>
+                <li><a href="#">예약판매</a></li>
+                <li><a href="#">정품등록</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">멤버쉽</a>
+              <ul class="sub_gnb">
+                <li><a href="#">등급&혜택 안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객 서비스</a>
+              <ul class="sub_gnb">
+                <li><a href="#">FAQ&공지사항</a></li>
+                <li><a href="#">매장 안내</a></li>
+                <li><a href="#">구매 상담</a></li>
+                <li><a href="#">이벤트</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <ul class="utile_gnb">
+          <li>
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-user"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+          </li>
+        </ul>
+        <div class="mobile_gnb">
+          <a href=""><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="main_vis">
+        <video autoplay loop muted playsinline>
+          <source src="images/main_video.webm" />
+        </video>
+      </div>
+      <div class="content clear">
+        <div class="left_area">
+          <div class="swiper mainCon">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="images/content1.png" alt="" />
+              </li>
+              <li class="swiper-slide">
+                <img src="images/content2.png" alt="" />
+              </li>
+              <li class="swiper-slide">
+                <img src="images/content3.png" alt="" />
+              </li>
+            </ul>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+        <div class="right_area">
+          <div class="swiper subCon">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="tit_wrap">Beats Fit Pro</div>
+                <div class="img_wrap">
+                  <img src="images/sub_content1.jpg" alt="" />
+                </div>
+                <div class="txt_wrap">
+                  <em>￦ 499,000</em>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="tit_wrap">Beats Studio Buds</div>
+                <div class="img_wrap">
+                  <img src="images/sub_content2.jpg" alt="" />
+                </div>
+                <div class="txt_wrap">
+                  <em>￦ 249,000</em>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="tit_wrap">Beats Flex</div>
+                <div class="img_wrap">
+                  <img src="images/sub_content3.jpg" alt="" />
+                </div>
+                <div class="txt_wrap">
+                  <em>￦ 639,000</em>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="tit_wrap">PRODUCT</div>
+        <ul>
+          <li>
+            <div class="txt_wrap">EARBUDS</div>
+          </li>
+          <li>
+            <div class="txt_wrap">HEADPHONES</div>
+          </li>
+          <li>
+            <div class="txt_wrap">SPEAKER</div>
+          </li>
+          <li>
+            <div class="txt_wrap">ETC.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="event">
+        <div class="event_title">EVENT</div>
+        <div class="main_event">
+          <div class="img_wrap"></div>
+          <div data-aos="fade-up" data-aos-duration="2000" class="txt_wrap">
+            <span>신상</span>
+            <h2>
+              BEATS<br />
+              STUDIO BUDS
+            </h2>
+            <em>음악은 더 선명하게. 소음은 더 작게.</em>
+            <p>￦169,000</p>
+            <button><i class="fa-brands fa-apple"></i> 에서 구입하기</button>
+            <button>더 알아보기</button>
+          </div>
+        </div>
+        <ul class="sub_event">
+          <li>
+            <img src="images/sub_event1.jpg" alt="" />
+            <div class="play"></div>
+            <div class="video_wrap">
+              <div class="video_pop">
+                <video controls muted playsinline>
+                  <source src="images/event_video1.webm" />
+                </video>
+              </div>
+            </div>
+            <div class="close">
+              X
+            </div>
+          </li>
+          <li>
+            <img src="images/sub_event2.jpg" alt="" />
+            <div class="play"></div>
+            <div class="video_wrap">
+              <div class="video_pop">
+                <video controls muted playsinline>
+                  <source src="images/event_video2.webm" />
+                </video>
+              </div>
+            </div>
+            <div class="close">
+              X
+            </div>
+          </li>
+          <li>
+            <img src="images/sub_event3.webp" alt="" />
+            <div class="play"></div>
+            <div class="video_wrap">
+              <div class="video_pop">
+                <video controls muted playsinline>
+                  <source src="images/event_video3.webm" />
+                </video>
+              </div>
+            </div>
+            <div class="close">
+              X
+            </div>
+          </li>
+        </ul>
+        <div class="more"><a href="">더 보러 가기 ></a></div>
+      </div>
+      <div class="banner">
+        <div class="banner_wrap">
+          <em>Beats의 최신 소식을 이메일로 받아보세요.</em>
+          <a href="">자세히 보기 ></a>
+        </div>
+      </div>
+      <div class="help clear">
+        <div class="left_area">
+          <em>무엇을<br />도와드릴까요?</em>
+        </div>
+        <div class="right_area">
+          <ul class="clear">
+            <li>
+              <a href="">
+                <div class="img_wrap">
+                  <img src="images/help1.svg" alt="" />
+                </div>
+                <div class="txt_wrap">FAQ & 공지사항</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="img_wrap">
+                  <img src="images/help1.svg" alt="" />
+                </div>
+                <div class="txt_wrap">매장안내</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="img_wrap">
+                  <img src="images/help1.svg" alt="" />
+                </div>
+                <div class="txt_wrap">고객센터</div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="img_wrap">
+                  <img src="images/help1.svg" alt="" />
+                </div>
+                <div class="txt_wrap">제품지원</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_wrap">
+        <div class="left_wrap">
+          <div class="foot_link">
+            <div class="link_wrap">
+              <ul>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">소비자 피해 보상보험</a></li>
+                <li><a href="">사이트맵</a></li>
+              </ul>
+            </div>
+            <div class="txt_wrap">
+              <p>본 사이트는 포트폴리오 용도의 사이트입니다.</p>
+            </div>
+          </div>
+          <div class="adress">
+            <p>사업장주소:서울 특별시 강남구 영동대로 517</p>
+            <p>
+              사업장 등록번호:120-81-84429 | 통신판매업신고번호 : 제
+              2011-서울강남-00810호
+            </p>
+
+            <p>Copyright © 2022 Apple Inc. - 모든 권리 보유.</p>
+          </div>
+        </div>
+        <div class="right_wrap">
+          <div class="foot_sns">
+            <div class="txt_wrap">FOLLOW US</div>
+            <div class="sns_wrap">
+              <ul>
+                <li>
+                  <i class="fa-brands fa-facebook-f"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-instagram"></i>
+                </li>
+                <li>
+                  <i class="fa-brands fa-youtube"></i>
+                </li>
+                <li><i class="fa-solid fa-b"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="foot_tab"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

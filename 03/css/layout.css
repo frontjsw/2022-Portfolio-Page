@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+html {
+}
+body {
+  /* font-family: "Montserrat", "Noto Sans KR", sans-serif; */
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative;
+}
+body.hidden {
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background: #000;
+}
+header .wrap {
+}
+header .wrap .logo_area {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+header .wrap .logo_area h1 {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 160px;
+  padding-right: 30px;
+}
+header .wrap .logo_area h1 a {
+  display: block;
+}
+header .wrap .logo_area h1 img {
+  width: 100%;
+  height: 100%;
+}
+header .wrap .logo_area h1 i {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
+header .wrap .logo_area h1.on i {
+  transform: rotate(180deg);
+  top: 21px;
+  transition: 0.3s;
+}
+
+header .wrap .logo_area .icon_wrap {
+  float: right;
+  padding-right: 20px;
+  line-height: 50px;
+  padding-top: 10px;
+}
+header .wrap .logo_area .icon_wrap i {
+  font-size: 20px;
+  color: #fff;
+}
+header .wrap .logo_area .icon_wrap a {
+  margin-left: 20px;
+}
+
+/* gnb */
+
+header .wrap .gnb {
+  position: relative;
+  width: 100%;
+}
+header .wrap .gnb_slide {
+  width: calc(100% - 50px);
+  float: left;
+  padding: 0 15px;
+  overflow: hidden;
+}
+header .wrap .gnb li {
+  width: auto;
+}
+header .wrap .gnb a {
+  color: #999999;
+  line-height: 50px;
+}
+header .wrap .gnb a.on {
+  color: #fff;
+}
+header .wrap .gnb_more {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+header .sub_menu {
+  width: 100%;
+  position: fixed;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: #222;
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+}
+header .sub_menu.on {
+  visibility: visible;
+  opacity: 1;
+}
+header .sub_menu ul {
+  padding: 20px;
+}
+header .sub_menu li {
+  display: inline-block;
+  padding: 0 15px;
+}
+header .gnb .sub_menu ul li a {
+  color: #fff;
+}
+
+/* search 클릭시 펼쳐지는 화면 */
+
+header .search_area {
+  visibility: hidden;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  overflow: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+header .search_area.on {
+  visibility: visible;
+  opacity: 1;
+}
+header .search_area .close {
+  text-align: right;
+  margin: 10px 20px 30px 20px;
+}
+header .search_area .close i {
+}
+header .search_area .icon {
+  padding: 0 15px;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #c49664;
+}
+header .search_area .icon span {
+  font-size: 15px;
+  margin-right: 10px;
+}
+header .search_area .icon i {
+  margin-right: 10px;
+}
+header .search_area .search {
+  padding: 0 15px;
+  position: relative;
+}
+header .search_area .search input {
+  display: inline-block;
+  border: unset;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  height: 40px;
+  color: #999999;
+}
+header .search_area .search i {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  font-size: 20px;
+}
+header .search_area .keyword {
+  margin-top: 50px;
+  padding: 0 15px;
+}
+header .search_area .keyword strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+header .search_area .keyword p {
+  color: #999999;
+  font-size: 14px;
+}
+header .search_area .best_keyword {
+  padding: 0 15px;
+  margin-top: 50px;
+}
+header .search_area .best_keyword strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+header .search_area .best_keyword ul {
+}
+header .search_area .best_keyword ul li {
+  margin: 20px 0;
+  display: block;
+  overflow: hidden;
+}
+header .search_area .best_keyword li .num {
+  float: left;
+  margin-right: 30px;
+  font-weight: 600;
+}
+header .search_area .best_keyword li .name {
+  float: left;
+}
+header .search_area .best_keyword li i {
+  float: right;
+  color: #999999;
+}
+
+/* 메인 로고 클릭시 펼쳐지는 화면 */
+
+header .more_menu {
+  position: fixed;
+  height: calc(100% - 50px);
+  background: #000;
+  width: 100%;
+  top: 50px;
+  left: 0;
+  z-index: 3;
+  overflow: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+header .more_menu.on {
+  visibility: visible;
+  opacity: 1;
+}
+header .more_menu ul {
+}
+header .more_menu ul li {
+  border-bottom: 1px solid #999999;
+  width: 100%;
+}
+header .more_menu ul li a {
+  margin-left: 15px;
+}
+header .more_menu ul li strong {
+  color: #fff;
+  line-height: 50px;
+}
+header .more_menu ul li .login {
+  color: #999999;
+  margin-left: 15px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+/* footer */
+
+footer .inner {
+  width: 100%;
+  padding: 30px 15px;
+
+  background: #000;
+  color: #999999;
+  position: relative;
+}
+footer .inner ul {
+}
+footer .inner li {
+  margin: 10px 0;
+}
+footer .inner li.on {
+  color: #fff;
+}
+footer .inner li a {
+  margin-right: 5px;
+  font-size: 14px;
+}
+footer .inner .sns {
+  overflow: hidden;
+}
+footer .inner .sns div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+footer .inner .sns .facebook {
+  background: url(../images/facebook.svg);
+}
+footer .inner .sns .naver {
+  background: url(../images/naver.svg);
+}
+footer .inner .sns .instagram {
+  background: url(../images/instagram.svg);
+}
+footer .inner .copy {
+  margin-top: 20px;
+  font-size: 12px;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+}
+footer .inner .service {
+  margin-top: 20px;
+}
+footer .inner .service .tit_wrap {
+  overflow: hidden;
+  position: relative;
+}
+footer .inner .service .tit_wrap .logo {
+  width: 80px;
+}
+footer .inner .service .tit_wrap i {
+  position: absolute;
+  top: 14px;
+  left: 85px;
+}
+footer .inner .service .tit_wrap .logo img {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+footer .more {
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  visibility: hidden;
+  background: #000;
+  width: 100%;
+  z-index: 3;
+  overflow: hidden;
+  height: 0;
+}
+footer .more.on {
+  visibility: visible;
+  height: auto;
+}
+footer .more p:first-child {
+  margin: 20px 0;
+}
+footer .more div {
+  font-size: 14px;
+  float: left;
+  color: #999999;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+/* 클릭이벤트 로고까지 */
