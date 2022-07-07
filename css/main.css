@@ -1,0 +1,125 @@
+.main_vis {
+  height: 100vh;
+  padding-top: 10rem;
+  position: relative;
+}
+.main_vis .txt_wrap {
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  font-weight: 700;
+  opacity: 0;
+}
+.main_vis .txt1 {
+  opacity: 1;
+}
+
+.publishing {
+  background-color: #fafafa;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.publishing ul {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  padding: 20rem 0;
+  align-items: center;
+  margin-left: 40%;
+}
+.publishing ul li {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  margin-right: 10rem;
+  font-size: 1rem;
+  background-color: blue;
+  border-radius: 1.5rem;
+  background: url(../img/publishing_bg1.jpg) no-repeat center/cover;
+}
+.publishing ul li:nth-child(2) {
+  background-image: url(../img/publishing_bg2.webp);
+}
+.publishing ul li:nth-child(3) {
+  background-image: url(../img/publishing_bg3.jpg);
+}
+.publishing ul li .txt_wrap {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.3s;
+  padding: 10rem 5rem;
+}
+.publishing ul li .txt_wrap em {
+  margin-bottom: 2em;
+  display: block;
+  font-size: 1.5em;
+}
+.publishing ul li .txt_wrap h1 {
+  font-size: 4em;
+  margin-bottom: 1em;
+}
+.publishing ul li .txt_wrap span {
+  font-size: 1em;
+  border: 1px solid #fff;
+  border-radius: 1.5em;
+  padding: 1em 2em;
+  width: fit-content;
+}
+.publishing ul li:hover .txt_wrap {
+  opacity: 1;
+}
+
+.con_tit {
+  background-color: #fff;
+}
+
+.contact {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 10rem 0;
+}
+.contact em {
+  display: block;
+  margin-bottom: 5rem;
+}
+.contact ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+.contact ul li {
+  font-size: 2rem;
+  border: 2px solid #000;
+  border-radius: 3rem;
+  background-color: #000;
+  transition: all 0.3s;
+  color: #fff;
+}
+.contact ul li a {
+  display: block;
+  padding: 2rem 3rem;
+}
+.contact ul li a i {
+  margin-right: 1rem;
+}
+.contact ul li:hover {
+  background-color: #fff;
+  color: #000;
+}
