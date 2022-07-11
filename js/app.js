@@ -41,31 +41,25 @@ ScrollTrigger.create({
   animation: tl1,
   trigger: ".main_vis",
   start: "top top",
-  // end: "+=3000",
+  end: "+=3000",
   pin: true,
   // markers: true,
   scrub: 1,
 });
 
-gsap.to(".publishing ul", {
-  xPercent: -75,
-  scrollTrigger: {
-    trigger: ".publishing",
-    markers: true,
-    start: "top top",
-    end: "+=2000",
-    // end: () => "+=" + publeConW * 10,
-    pin: true,
-    scrub: 1,
+ScrollTrigger.matchMedia({
+  "(min-width: 800px) and (max-width: 2640px)": function () {
+    gsap.to(".publishing ul", {
+      xPercent: -150,
+      scrollTrigger: {
+        trigger: ".publishing",
+        pinSpacing: true,
+        // markers: true,
+        start: "top top",
+        end: "+=2000",
+        pin: true,
+        scrub: 1,
+      },
+    });
   },
 });
-// .timeline({
-//   scrollTrigger: {
-//     trigger: ".publishing",
-//     // markers: true,
-//     start: "top top",
-//     end: "+=12000",
-//     pin: true,
-//     scrub: 1,
-//   },
-// })
