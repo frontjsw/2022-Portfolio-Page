@@ -9,7 +9,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight: 700;
   opacity: 0;
 }
@@ -21,22 +21,21 @@
   background-color: #fafafa;
   position: relative;
   width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 .publishing ul {
   display: flex;
   width: 100%;
-  height: max-content;
-  padding: 20rem 0;
+  height: 100%;
   align-items: center;
   margin-left: 40%;
 }
 .publishing ul li {
   position: relative;
-  height: 100%;
-  width: 30%;
+  height: 70%;
+  width: 50%;
   margin-right: 10rem;
-  font-size: 1rem;
   background-color: blue;
   border-radius: 1.5rem;
   background: url(../img/publishing_bg1.jpg) no-repeat center/cover;
@@ -52,7 +51,7 @@
   height: 100%;
   color: #fff;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 2rem;
   text-align: center;
   border-radius: 1.5rem;
   display: flex;
@@ -64,21 +63,25 @@
   transition: 0.3s;
   padding: 10rem 5rem;
 }
-.publishing ul li .txt_wrap em {
-  margin-bottom: 2em;
-  display: block;
-  font-size: 1.5em;
-}
 .publishing ul li .txt_wrap h1 {
-  font-size: 4em;
-  margin-bottom: 1em;
+  font-size: 5rem;
+  line-height: 6rem;
+  margin: 2rem 0;
 }
 .publishing ul li .txt_wrap span {
-  font-size: 1em;
+  font-size: 2rem;
   border: 1px solid #fff;
-  border-radius: 1.5em;
-  padding: 1em 2em;
+  border-radius: 3rem;
   width: fit-content;
+  transition: 0.3s;
+}
+.publishing ul li .txt_wrap span a {
+  display: block;
+  padding: 1rem 3rem;
+}
+.publishing ul li .txt_wrap span:hover {
+  background-color: #fff;
+  color: #000;
 }
 .publishing ul li:hover .txt_wrap {
   opacity: 1;
@@ -122,4 +125,27 @@
 .contact ul li:hover {
   background-color: #fff;
   color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  .publishing {
+    height: auto;
+  }
+  .publishing ul {
+    display: block;
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+  .publishing ul li {
+    width: 100%;
+    border-radius: 0;
+  }
+  .publishing ul li .txt_wrap {
+    padding: 20rem 0;
+    border-radius: 0;
+  }
+
+  .contact ul {
+    width: 80%;
+  }
 }
