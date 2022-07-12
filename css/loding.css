@@ -98,3 +98,8 @@ body {
     overflow: auto;
   }
 }
+@media screen and (max-width: 800px) {
+  .loding svg text {
+    font-size: 12rem;
+  }
+}
