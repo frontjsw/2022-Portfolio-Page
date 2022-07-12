@@ -37,20 +37,6 @@ window.onload = function () {
   subCon.controller.control = mainCon;
   // 메인 콘텐츠 슬라이더 끝
 
-  // // event 이미지 모션 시작
-  // const eventTop = document.querySelector(".event").offsetTop - 600;
-  // window.addEventListener("scroll", () => {
-  //   let winY = window.scrollY;
-  //   if (winY > eventTop) {
-  //     document.querySelector(".left_back").style.width = "0%";
-  //     document.querySelector(".right_back").style.width = "0%";
-  //   } else if (winY < eventTop - 600) {
-  //     document.querySelector(".left_back").style.width = "50%";
-  //     document.querySelector(".right_back").style.width = "50%";
-  //   }
-  // });
-  // // event 이미지 모션 끝
-
   // event 동영상 재생 시작
   const videoPlay = document.querySelectorAll(".play");
   const videoClose = document.querySelectorAll(".close");

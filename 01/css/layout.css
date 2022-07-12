@@ -81,8 +81,7 @@ header .header_wrap .utile_gnb {
   display: flex;
   line-height: 4rem;
 }
-header .header_wrap .utile_gnb li {
-}
+
 header .header_wrap .utile_gnb li:not(:first-child) {
   margin-left: 3rem;
 }
@@ -109,8 +108,7 @@ footer {
 .footer_wrap .left_wrap {
   width: 48%;
 }
-.footer_wrap .left_wrap .foot_link {
-}
+
 .footer_wrap .left_wrap .foot_link .link_wrap {
   margin-bottom: 1rem;
 }
@@ -130,17 +128,11 @@ footer {
   height: 1.5rem;
   background-color: #bbbbbb;
 }
-.footer_wrap .left_wrap .foot_link .link_wrap ul li a {
-}
+
 .footer_wrap .left_wrap .foot_link .txt_wrap {
   margin-bottom: 10px;
 }
-.footer_wrap .left_wrap .foot_link .txt_wrap p {
-}
-.footer_wrap .left_wrap .adress {
-}
-.footer_wrap .left_wrap .adress p {
-}
+
 .footer_wrap .right_wrap {
   width: 48%;
   font-size: 2.5rem;
@@ -163,8 +155,7 @@ footer {
 .footer_wrap .right_wrap .foot_sns .sns_wrap ul li {
   width: 20%;
 }
-.footer_wrap .right_wrap .foot_tab {
-}
+
 .footer_wrap .right_wrap .foot_tab > ul {
   display: flex;
   justify-content: space-between;
@@ -173,10 +164,6 @@ footer {
   background-color: red;
   height: 5rem;
   width: 45%;
-}
-.footer_wrap .right_wrap .foot_tab > ul > li > ul {
-}
-.footer_wrap .right_wrap .foot_tab > ul > li > ul > li {
 }
 
 @media screen and (max-width: 1300px) {
