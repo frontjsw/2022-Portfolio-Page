@@ -1,3 +1,33 @@
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.blind {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.btn1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 2rem 5rem;
+  background-color: #00c68e;
+  border: 2px solid #00c68e;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.btn1:hover {
+  background-color: #fff;
+  color: #00c68e;
+}
+
 .main_vis {
   padding-top: 10rem;
   text-align: center;
@@ -7,7 +37,7 @@
   margin-bottom: 10rem;
 }
 .main_vis .txt_area h1 {
-  font-size: 5.2rem;
+  font-size: 4.2rem;
   margin-bottom: 2rem;
 }
 .main_vis .txt_area p {
@@ -30,7 +60,7 @@
   left: 0;
   width: 100%;
   height: 50rem;
-  background-color: #daf8f2;
+  background-color: #00c68e;
 }
 
 .content1 {
@@ -166,6 +196,12 @@
 .content2 .interview .swiper .swiper-button-prev {
   color: #fff;
 }
+.content2 .interview .swiper .swiper-pagination {
+  display: none;
+}
+.content2 .interview .swiper .swiper-pagination-bullet-active {
+  background-color: #00c68e;
+}
 .content2 .interview .swiper .swiper-wrapper .swiper-slide {
   position: relative;
   background: url(../img/interview_bg1.jpg) no-repeat center/cover;
@@ -215,4 +251,61 @@
 }
 .content2 .interview .swiper .swiper-wrapper .interview3 {
   background: url(../img/interview_bg3.jpg) no-repeat center/cover;
+}
+
+@media screen and (max-width: 1450px) {
+  .content1 .left_area {
+    width: 40%;
+  }
+  .content1 .right_area {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .content1 .left_area {
+    float: none;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .content1 .right_area {
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main_vis .vid_area .back {
+    height: 40rem;
+  }
+
+  .content2 .interview .swiper .swiper-wrapper .swiper-slide .txt_wrap {
+    left: 10%;
+  }
+  .content2 .interview .swiper .swiper-wrapper .swiper-slide .txt_wrap h1 {
+    display: none;
+  }
+
+  .content2 .interview .swiper .swiper-button {
+    display: none;
+  }
+
+  .content2 .interview .swiper .swiper-pagination {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main_vis .vid_area .back {
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content1 .right_area .card_list li {
+    width: 100%;
+    margin: 0 0 10% 0;
+  }
+  .content1 .right_area .card_list li.mobile_none {
+    display: none;
+  }
+  .content1 .right_area .card_list li:nth-child(2n+1) {
+    margin: 0 0 10% 0;
+  }
 }

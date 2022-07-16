@@ -1,3 +1,4 @@
+@import "common";
 header {
   height: 10rem;
   position: relative;
@@ -25,8 +26,8 @@ header {
       }
       &:hover {
         a {
-          color: #00c5a8;
-          border-bottom: 2px solid #00c5a8;
+          color: $main-color;
+          border-bottom: 2px solid $main-color;
         }
       }
     }
@@ -41,9 +42,18 @@ header {
       padding: 0 1rem;
     }
   }
+  .mobile_menu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+  }
 }
 footer {
-  background-color: #00c5a8;
+  width: 100%;
+  background-color: $main-color;
   color: #fff;
   .inner {
     width: 80%;
@@ -115,5 +125,41 @@ footer {
 @media screen and (max-width: 800px) {
   html {
     font-size: 6px;
+  }
+
+  header {
+    .gnb_wrap {
+      display: none;
+    }
+    .utill {
+      display: none;
+    }
+    .mobile_menu {
+      display: block;
+    }
+  }
+  footer {
+    .inner {
+      .top_area {
+        display: block;
+        padding: 3rem 0;
+        .logo {
+          margin-bottom: 3rem;
+        }
+        .sns {
+          li {
+            margin: 3rem 2rem 3rem 0;
+          }
+        }
+      }
+      .bot_area {
+        display: block;
+        .privacy {
+          li {
+            margin: 3rem 2rem 2rem 0;
+          }
+        }
+      }
+    }
   }
 }

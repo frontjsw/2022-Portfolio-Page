@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&family=Poppins:wght@300;500;700&display=swap");
+body {
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+}
+
+$main-color: #00c68e;
+
 .clear::after {
   content: "";
   display: block;
@@ -15,27 +22,13 @@
   font-size: 1.6rem;
   font-weight: 700;
   padding: 2rem 5rem;
-  background-color: #00c5a8;
-  border: 2px solid #00c5a8;
+  background-color: $main-color;
+  border: 2px solid $main-color;
   color: #fff;
   border-radius: 5px;
   transition: 0.3s;
   &:hover {
     background-color: #fff;
-    color: #00c5a8;
-  }
-}
-.btn2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding: 3rem 10rem;
-  border: 1px solid #00c5a8;
-  background-color: #fff;
-  border-radius: 36px;
-  transition: 0.3s;
-  color: #00c5a8;
-  &:hover {
-    background-color: #00c5a8;
-    color: #fff;
+    color: $main-color;
   }
 }

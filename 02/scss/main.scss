@@ -1,3 +1,5 @@
+@import "common";
+
 .main_vis {
   padding-top: 10rem;
   text-align: center;
@@ -5,7 +7,7 @@
     font-weight: 700;
     margin-bottom: 10rem;
     h1 {
-      font-size: 5.2rem;
+      font-size: 4.2rem;
       margin-bottom: 2rem;
     }
     p {
@@ -28,7 +30,7 @@
       left: 0;
       width: 100%;
       height: 50rem;
-      background-color: #daf8f2;
+      background-color: $main-color;
     }
   }
 }
@@ -40,7 +42,7 @@
     float: left;
     width: 50%;
     span {
-      color: #00c68e;
+      color: $main-color;
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 2rem;
@@ -96,7 +98,7 @@
           .cate {
             font-size: 1.2rem;
             font-weight: 700;
-            color: #00c68e;
+            color: $main-color;
             display: block;
             margin-bottom: 1rem;
           }
@@ -143,7 +145,7 @@
     margin-bottom: 10rem;
     span {
       display: block;
-      color: #00c68e;
+      color: $main-color;
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 1rem;
@@ -164,6 +166,12 @@
       }
       .swiper-button-prev {
         color: #fff;
+      }
+      .swiper-pagination {
+        display: none;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: $main-color;
       }
       .swiper-wrapper {
         .swiper-slide {
@@ -215,6 +223,72 @@
         }
         .interview3 {
           background: url(../img/interview_bg3.jpg) no-repeat center/ cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .content1 {
+    .left_area {
+      width: 40%;
+    }
+    .right_area {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .content1 {
+    .left_area {
+      float: none;
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+    .right_area {
+      float: none;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .main_vis .vid_area .back {
+    height: 40rem;
+  }
+  .content2 .interview .swiper .swiper-wrapper .swiper-slide .txt_wrap {
+    left: 10%;
+    h1 {
+      display: none;
+    }
+  }
+  .content2 .interview .swiper .swiper-button {
+    display: none;
+  }
+  .content2 .interview .swiper .swiper-pagination {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main_vis .vid_area .back {
+    height: 30rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content1 {
+    .right_area {
+      .card_list {
+        li {
+          width: 100%;
+          margin: 0 0 10% 0;
+        }
+        li.mobile_none {
+          display: none;
+        }
+        li:nth-child(2n + 1) {
+          margin: 0 0 10% 0;
         }
       }
     }

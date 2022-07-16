@@ -68,6 +68,7 @@
 }
 .content .right_area ul li .txt_wrap {
   font-size: 2rem;
+  font-weight: 500;
   padding: 10px 0;
 }
 .content .right_area ul li .txt_wrap em {
@@ -120,7 +121,7 @@
   bottom: 0px;
   left: 0px;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
   padding: 2rem;
   transition: padding 0.3s;
   border-bottom: 1px solid #f0f0f0;
