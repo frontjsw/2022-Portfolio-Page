@@ -1,820 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/uicons-regular-rounded.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/main.css">
-
-
-    <script src="jquery-1.12.4.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/custom.js"></script>
-</head>
-<body>
-    <!-- 헤더 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GENESIS</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="wrap">
-            <div class="logo_area">
-                <h1>
-                    <a href="javescript:;">
-                        <img src="images/main_logo1.png" alt="logo">
-                        <i class="fi-rr-angle-small-down"></i>
-                        <span class="blind">메인 로고</span></a></h1>
-                <div class="icon_wrap">
-                    <a href="javascript:;" class="search_btn"><i class="fi-rr-search"><span class="blind">검색</span></i></a>
-                    <a href=""><i class="fi-rr-shopping-bag"></i></a>
-                </div>
-            </div>
-            <div class="gnb clear">
-                <span class="blind">메인 메뉴</span>
-               <div class="swiper-container gnb_slide">
-                <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
-                        <a href="javascript:;" class="on">신상품</a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="javascript:;">남성</a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="javascript:;">여성</a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="javascript:;">언더웨어</a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="javascript:;">퍼포먼스</a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="javascript:;">액세서리</a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="javascript:;">기획전</a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="javascript:;">이벤트</a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="javascript:;">아울렛</a>
-                    </li>
-                    <li class="swiper-slide">
-                        <a href="javascript:;">라이브</a>
-                    </li>
-                </ul>
-               </div>
-
-                    <a href="javascript:;" class="gnb_more"><i class="fi-rr-plus-small"><span class="blind">메뉴 더보기</span></i></a>
-                <div class="sub_menu">
-                    <ul>
-                        <li>
-                            <a href="javascript:;" class="on">신상품</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">남성</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">여성</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">언더웨어</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">퍼포먼스</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">액세서리</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">기획전</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">이벤트</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">아울렛</a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">라이브</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- search 클릭시 펼쳐지는 화면 -->
-            <div class="search_area">
-                <div class="close">
-                    <a href="javascript:;"><i class="fi-rr-cross"></i></a>
-                </div>
-                <div class="search">
-                    <input value="봄 맞이 혜택 패키지" type="text">
-                    <a href="javascript:;"><i class="fi-rr-search"></i></a>
-                </div>
-                <div class="icon">
-                    <i class="fi-rr-mode-portrait"></i><span>바코드</span>
-                    <i class="fi-rr-picture"></i><span>이미지</span>
-                    <i class="fi-rr-microphone"></i><span>음성</span>
-                </div>
-                <div class="keyword">
-                    <strong>최근 검색어</strong>
-                    <p>최근 검색어가 없습니다.</p>
-                </div>
-                <div class="best_keyword">
-                    <strong>인기 검색어</strong>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <p class="num">1</p>
-                                <p class="name">티셔츠</p>
-                                <i class="fi-rr-minus-small"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p class="num">2</p>
-                                <p class="name">언더웨어</p>
-                                <i class="fi-rr-minus-small"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p class="num">3</p>
-                                <p class="name">데님</p>
-                                <i class="fi-rr-minus-small"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p class="num">4</p>
-                                <p class="name">가디건</p>
-                                <i class="fi-rr-minus-small"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p class="num">5</p>
-                                <p class="name">맨투맨</p>
-                                <i class="fi-rr-minus-small"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p class="num">6</p>
-                                <p class="name">반팔</p>
-                                <i class="fi-rr-minus-small"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p class="num">7</p>
-                                <p class="name">후드티</p>
-                                <i class="fi-rr-minus-small"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p class="num">8</p>
-                                <p class="name">팬츠</p>
-                                <i class="fi-rr-minus-small"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <p class="num">9</p>
-                                <p class="name">양말</p>
-                                <i class="fi-rr-minus-small"></i>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-            <!-- 메인 로고 클릭시 펼쳐지는 화면 -->
-            <div class="more_menu">
-                <ul>
-                    <li>
-                        <a href=""><strong>신상품</strong></a>
-                    </li>
-                    <li>
-                        <a href=""><strong>남성</strong></a>
-                    </li>
-                    <li>
-                        <a href=""><strong>여성</strong></a>
-                    </li>
-                    <li>
-                        <a href=""><strong>남녀공용</strong></a>
-                    </li>
-                    <li>
-                        <a href=""><strong>남성 언더웨어</strong></a>
-                    </li>
-                    <li>
-                        <a href=""><strong>여성 언더웨어</strong></a>
-                    </li>
-                    <li>
-                        <a href=""><strong>퍼포먼스</strong></a>
-                    </li>
-                    <li>
-                        <a href=""><strong>액세서리</strong></a>
-                    </li>
-                    <li>
-                        <a href=""><strong>컬렉션</strong></a>
-                    </li>
-                    <li>
-                        <a href=""><strong>로그인</strong></a>
-                        <div class="login">
-                            <a href=""><p>로그인</p></a>
-                            <a href=""><p>계정 만들기</p></a>
-                            <a href=""><p>친구에게 추천하기</p></a>
-                            <a href=""><p>위시리스트</p></a>
-                            <a href=""><p>매장 검색</p></a>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
+      <div class="inner">
+        <h1 class="logo">
+          <a href="#"><span class="blind">메인 로고</span></a>
+        </h1>
+        <nav>
+          <ul class="gnb">
+            <li class="gnb_list"><a href="#">모델</a></li>
+            <li class="gnb_list"><a href="#">구매</a></li>
+            <li class="gnb_list"><a href="#">체험</a></li>
+            <li class="gnb_list"><a href="#">멤버스</a></li>
+            <li class="gnb_list"><a href="#">GENESIS</a></li>
+            <li class="gnb_list box"><a href="#">Service</a></li>
+            <li class="gnb_list box"><a href="#">My page</a></li>
+          </ul>
+          <div class="utill">
+            <span class="search"
+              ><a href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+                ><span class="blind">검색 아이콘</span></a
+              ></span
+            >
+            <span class="menu"
+              ><a href="#"
+                ><i class="fa-solid fa-bars"></i
+                ><span class="blind">메뉴 아이콘</span></a
+              ></span
+            >
+          </div>
+        </nav>
+      </div>
     </header>
-    <!-- 메인   -->
     <main>
-        <span class="blind">메인 이미지 슬라이드</span>
-        <div class="main_vis">
-            <div class="img_wrap">
-                <div class="swiper-container main-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <a href="">
-                          <img src="images/main_img1.jpg" alt="">
-                          <div class="txt_wrap">
-                            <strong> Heron Preston for<br>Calvin Klein </strong>
-                            <span> They're essentials, but they're not generic.<br> Look for the orange thread. </span>
-                        </div>
-                        </a>
-                    </div>
-                      <div class="swiper-slide">
-                        <a href="">
-                          <img src="images/main_img2.jpg" alt="">
-                          <div class="txt_wrap">
-                            <strong> Heron Preston for<br>Calvin Klein </strong>
-                            <span> They're essentials, but they're not generic.<br> Look for the orange thread. </span>
-                        </div>
-                        </a>
-                    </div>
-                      <div class="swiper-slide">
-                        <a href="">
-                          <img src="images/main_img3.jpg" alt="">
-                          <div class="txt_wrap">
-                            <strong> Heron Preston for<br>Calvin Klein </strong>
-                            <span> They're essentials, but they're not generic.<br> Look for the orange thread. </span>
-                        </div>
-                        </a>
-                    </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-
-        </div>
-        <div class="product_area">
-            <span class="blind">제품 검색,바로가기</span>
-            <strong>제품을 빠르게 찾아보세요!</strong>
-            <div class="product_search">
-                <input placeholder="찾으시는 제품을 검색해 보세요." type="text">
-                <a href="javascript:;"><i class="fi-rr-search"></i></a>
-            </div>
-            <strong>Calvin Klein 제품 바로가기</strong>
-            <div class="product_list">
-                <div>
-                    <a href="">
-                        <img src="images/product_img1.jpg" alt="">
-                        <div class="txt_area">
-                            <strong>Men's Apparel</strong>
-                            <p>SHOP NOW</p>
-                        </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="images/product_img2.jpg" alt="">
-                        <div class="txt_area">
-                            <strong>Women's Appare</strong>
-                            <p>SHOP NOW</p>
-                        </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="images/product_img3.jpg" alt="">
-                        <div class="txt_area">
-                            <strong>Men's Bottoms</strong>
-                            <p>SHOP NOW</p>
-                        </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="images/product_img4.jpg" alt="">
-                        <div class="txt_area">
-                            <strong>Women's Bottoms</strong>
-                            <p>SHOP NOW</p>
-                        </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="images/product_img5.jpg" alt="">
-                        <div class="txt_area">
-                            <strong>Men's Underwear</strong>
-                            <p>SHOP NOW</p>
-                        </div>
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="images/product_img6.jpg" alt="">
-                        <div class="txt_area">
-                            <strong>Women's Underwear</strong>
-                            <p>SHOP NOW</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="product_best">
-
-                <!-- 텍스트 올리기------- -->
-                <span class="blind">인기 상품</span>
-                <strong>Calvin Klein 인기상품</strong>
-                <div class="swiper-container best-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="wrap">
-                            <a href=""><img src="images/best1.jpg" alt=""></a>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="wrap">
-                            <a href=""><img src="images/best2.jpg" alt=""></a>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="wrap">
-                            <a href=""><img src="images/best3.jpg" alt=""></a>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="wrap">
-                            <a href=""><img src="images/best4.jpg" alt=""></a>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="wrap">
-                            <a href=""><img src="images/best5.jpg" alt=""></a>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="wrap">
-                            <a href=""><img src="images/best6.jpg" alt=""></a>  
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="wrap">
-                            <a href=""><img src="images/best7.jpg" alt=""></a>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                  </div>
-            </div>
-           
-
-        </div>
-        <div class="collection_area">
-            <span class="blind">제품 컬렉션</span>
-            <div class="wrap">
-                <div class="tit_wrap">
-                    <span>HERON PRESTON X<br> CALVIN KLEIN</span>
-                </div>
-                    <ul class="product_wrap">
-                        <div class="swiper-container product-container">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                <li class="product_item">
-                                <div class="img_wrap">
-                                    <a href=""><img src="images/collection1.jpg " alt=""></a>
-                                </div>
-                                <div class="txt_wrap">
-                                    <a href=""><strong>남성 프로젝트 오렌지 인디고 린스 데님 재킷(인디고)</strong></a>
-                                    <span>
-                                        <p>KRW 329,000</p>
-                                    </span>
-                                </div>
-                                </li>
-                                </div>
-                              <div class="swiper-slide">
-                                <li class="product_item">
-                                    <div class="img_wrap">
-                                        <a href=""><img src="images/collection2.jpg " alt=""></a>
-                                    </div>
-                                    <div class="txt_wrap">
-                                        <a href=""><strong>남성 프로젝트 오렌지 스트레이트 핏 인디고 데님(인디고)</strong></a>
-                                        <span>
-                                            <p>KRW 329,000</p>
-                                        </span>
-                                    </div>
-                                    </li>
-                              </div>
-                              <div class="swiper-slide">
-                                <li class="product_item">
-                                    <div class="img_wrap">
-                                        <a href=""><img src="images/collection3.jpg " alt=""></a>
-                                    </div>
-                                    <div class="txt_wrap">
-                                        <a href=""><strong>남성 프로젝트 오렌지 캔버스 데님 재킷(아이보리)</strong></a>
-                                        <span>
-                                            <p>KRW 329,000</p>
-                                        </span>
-                                    </div>
-                                    </li>
-                              </div>
-                              <div class="swiper-slide">
-                                <li class="product_item">
-                                    <div class="img_wrap">
-                                        <a href=""><img src="images/collection4.jpg " alt=""></a>
-                                    </div>
-                                    <div class="txt_wrap">
-                                       <a href=""> <strong>여성 프로젝트 오렌지 90'S 핏 인디고 데님(인디고)</strong></a>
-                                        <span>
-                                            <p>KRW 269,000</p>
-                                        </span>
-                                    </div>
-                                    </li>
-                              </div>
-                            </div>
-                          </div>
-                        
-
-                    </ul>
-                    <div class="more">
-                        <a href=""><span>VIEW MORE</span></a>
-                    </div>
-            </div>
-        </div>
-        <div class="new_area">
-            <span class="blind">신상 제품</span>
-            <h2>지금 만나는 신상</h2>
-            <ul class="gnb">
-                <li class="on"><a href="javascript:;">전체</a></li>
-                <li><a href="javascript:;">여성</a></li>
-                <li><a href="javascript:;">남성</a></li>
-                <li><a href="javascript:;">언더웨어</a></li>
-                <li><a href="javascript:;">퍼포먼스</a></li>
-            </ul>
-            <div class="new_con_wrap">
-                <div class="new_con on " id="new_con1">
-                    <ul class="new_wrap">
-                        <li class="new_item"> 
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new1.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 프로젝트 오렌지 캔버스 블랙 데님 재킷(블랙)</p>
-                                <span>
-                                    <p>KRW 329,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new2.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 프로젝트 오렌지 릴렉스 핏 캔버스 카펜터 데님</p>
-                                <span>
-                                    <p>KRW 269,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new3.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 프로젝트 오렌지 오가닉 코튼 헤비웨이트 스웨트셔츠</p>
-                                <span>
-                                    <p>KRW 199,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new4.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 프로젝트 오렌지 오가닉 코튼 히든 포켓 후디</p>
-                                <span>
-                                    <p>KRW 229,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="new_con" id="new_con2">
-                    <ul class="new_wrap">
-                        <li class="new_item"> 
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new2_1.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>여성 아카이브 로고 티셔츠</p>
-                                <span>
-                                    <p>KRW 79,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new2_2.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>여성 슬림 스트레이트 앵클 데님</p>
-                                <span>
-                                    <p>KRW 149,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new2_3.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>여성 스트레이트핏 모노그램 로고 반팔 티셔츠</p>
-                                <span>
-                                    <p>KRW 69,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new2_4.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>여성 미드라이즈 스키니 앵클 데님</p>
-                                <span>
-                                    <p>KRW 229,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="new_con" id="new_con3">
-                    <ul class="new_wrap">
-                        <li class="new_item"> 
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new3_1.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 슬림 드로코드 치노 팬츠</p>
-                                <span>
-                                    <p>KRW 159,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new3_2.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 대드 핏 시즈널 치노 팬츠</p>
-                                <span>
-                                    <p>KRW 159,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new3_3.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 애슬레틱 테이퍼 데님</p>
-                                <span>
-                                    <p>KRW 99,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new3_4.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 바디 핏 데님</p>
-                                <span>
-                                    <p>KRW 229,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="new_con" id="new_con4">
-                    <ul class="new_wrap">
-                        <li class="new_item"> 
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new4_1.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 프로젝트 오렌지 3PK 반팔 티셔츠</p>
-                                <span>
-                                    <p>KRW 129,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new4_2.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 프로젝트 오렌지 3PK 박서 브리프</p>
-                                <span>
-                                    <p>KRW 125,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new4_3.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>여성 프로젝트 오렌지 U 백 브라렛</p>
-                                <span>
-                                    <p>KRW 63,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new4_4.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>여성 프로젝트 오렌지 브리프</p>
-                                <span>
-                                    <p>KRW 49,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="new_con" id="new_con5">
-                    <ul class="new_wrap">
-                        <li class="new_item"> 
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new5_1.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 액티브 아이콘 쇼츠</p>
-                                <span>
-                                    <p>KRW 39,500</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new5_2.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>여성 액티브 아이콘 플리츠 스커트</p>
-                                <span>
-                                    <p>KRW 64,500</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new5_3.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>여성 액티브 아이콘 플리츠 스커트</p>
-                                <span>
-                                    <p>KRW 64,500</p>
-                                </span>         
-                            </div>
-                        </li>
-                        <li class="new_item">
-                            <div class="img_wrap">
-                                <a href=""><img src="images/new5_4.jpg" alt=""></a>
-                            </div>
-                            <div class="txt_wrap">
-                                <p>남성 리니어 로고 아노락</p>
-                                <span>
-                                    <p>KRW 159,000</p>
-                                </span>         
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="media_area">
-            <span class="blind">제품 소개 영상</span>
-           <div class="iframe_wrap">
-                <video src="images/Ck Heron Preston  Docuseries 1920X1080-1.m4v" controls></video>
-           </div>
-           <strong>In Conversation</strong>
-           <p>"We've got to go harder on the detail."<br>
-               — Heron on Heron Preston for Calvin Klein
-               </p>
-
-
-
-        </div>
-
-        <div class="runway_area">
-            <span class="blind">sns</span>
-            <div class="tit_wrap">
-                <div class="img_wrap">
-                    <img src="images/runway_logo.png" alt="">
-                </div>
-                <p>Heron Preston for Calvin Klein</p>
-            </div>
-            <div class="img_wrap">
-                <div>
-                    <img src="images/runway3.webp" alt="">
-                </div>
-                <div>
-                    <img src="images/runway4.webp" alt="">
-                </div>
-                <div>
-                    <img src="images/runway1.webp" alt="">
-                </div>
-                <div>
-                    <img src="images/runway2.webp" alt="">
-                </div>
-                <div>
-                    <img src="images/runway5.webp" alt="">
-                </div>
-                <div>
-                    <img src="images/runway6.webp" alt="">
-            </div>
-        </div>
-    </main>
-
-    <!-- footer -->
-    <footer>
+      <div class="main_vis">
+        <video autoplay loop muted playsinline>
+          <span class="blind">메인 광고 비디오</span>
+          <source src="img/videoplayback.webm" type="video/webm" />
+        </video>
+      </div>
+      <div class="introduce_area">
         <div class="inner">
-            <ul>
-                <li>
-                    <a href=""><span>매장안내</span></a>
-                    <a href=""><span>고객센터</span></a>
-                    <a href=""><span>고객의 소리</span></a>
-                </li>
-                <li>
-                    <a href=""><span>이용약관</span></a>
-                    <a href="" class="on"><span>개인정보처리방침</span></a>
-                    <a href=""><span>사업자정보확인</span></a>
-                </li>
-                <li>
-                    <a href=""><span>PC버전</span></a>
-                    <a href=""><span>탐색</span></a>
-                    <a href=""><span>소개</span></a>
-                </li>
-            </ul>
-            <div class="sns">
-                <a href=""><div class="facebook"></div></a>
-                <a href=""><div class="naver"></div></a>
-                <a href=""><div class="instagram"></div></a>
-            </div>
-            <div class="copy">
-                <p> Copyright © 2021년 모든 저작권은 Calvin Klein에 있으며 무단 복제 및 도용을 금지합니다.</p>
-            </div>
-            <div class="service">
-                <div class="tit_wrap">  
-                    <a href="javascript:;">
-                        <div class="logo"><img src="images/main_logo1.png" alt=""></div>
-                        <i class="fi-rr-angle-small-down"></i></a>
-                </div>
-                <div class="more">
-                    <p>Calvin Klein은 전 세계 목화 농업 개선을 위해 The Better Cotton Initiative와 협력합니다.</p>
-                    <p>피브이에이치코리아 유한회사</p>
-                    <p>대표자명 후이혼치우제프리</p>
-                    <p>소재지 서울특별시 강남구 테헤란로 508 해성2빌딩 18층</p>
-                    <p>사업자등록번호 211-86-59430</p>
-                    <p>통신판매업 신고번호 2019-서울강남-03726</p>
-                    <p>고객센터 1600-1811</p>
-                    <p>이메일 CustomerServiceKR@ck.com</p>
-                    <a href=""><div>윤리경영</div></a>
-                    <a href=""><div>채용정보</div></a>
-                </div>
-            </div>
+          <div class="tit_wrap">
+            <em>DISCOVER THE GENESIS G90</em>
+            <strong
+              >제네시스 G90의 구석구석에 깃든 우아함은 직접 보았을 때 그 진가를
+              발휘합니다.</strong
+            >
+          </div>
+          <div class="item item1">
+            <a href="#">
+              <div class="img_wrap">
+                <img src="img/introduce1.webp" alt="소개 이미지 1" />
+              </div>
+              <div class="txt_wrap">
+                <em>DESIGN</em>
+                <h2>지-매트릭스(G-MATRIX)<br />크레스트 그릴</h2>
+                <p>
+                  제네시스 G90 디자인의 중심에는 독창적인<br />
+                  지-매트릭스(G-Matrix) 크레스트 그릴이<br />
+                  있습니다. 정교한 라인과 유려한 바디가 만나<br />
+                  빈틈없이 완벽한 조형미를 선사합니다.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="item item2">
+            <a href="#">
+              <div class="img_wrap">
+                <img src="img/introduce2.webp" alt="소개 이미지 2" />
+              </div>
+              <div class="txt_wrap">
+                <em>DESIGN</em>
+                <h2>멀티 스포크 휠</h2>
+                <p>
+                  G-Matrix 를 반영한 입체감 있는<br />
+                  신규 19인치 멀티 스포크 휠을 적용하였습니다<br />
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="item item3">
+            <a href="#">
+              <div class="img_wrap">
+                <img src="img/introduce3.webp" alt="소개 이미지 3" />
+              </div>
+              <div class="txt_wrap">
+                <em>PASSING BEAUTY</em>
+                <h2>사이드 캐릭터 라인</h2>
+                <p>
+                  유려한 사이드 캐릭터 라인의 완벽한 비율,<br />
+                  역동적인 우아함의 조화로 제네시스 디자인이<br />
+                  추구하는 영원한 아름다움의 가치를 담아냅니다.
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
-        
+      </div>
+      <div class="content_area">
+        <div class="inner">
+          <div class="tit_wrap"><h2>RELATED CONTENTS</h2></div>
+          <ul class="content_list">
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="img/content1.webp" alt="프로모션 이미지 1" />
+                  <div class="more">
+                    <div class="txt">자세히 보기</div>
+                    <div class="arr">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="txt_wrap">
+                  <span class="txt txt1">CONCEPT</span>
+                  <strong>제네시스 콘셉트카</strong>
+                  <p>
+                    제네시스의 디자인 철학을 보여주는 콘셉트카. 탄탄한 균형감과
+                    장인정신이 깃든 완벽한 디테일을 확인해보세요.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="img/content2.jpg" alt="프로모션 이미지 2" />
+                  <div class="more">
+                    <div class="txt">자세히 보기</div>
+                    <div class="arr">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="txt_wrap">
+                  <span class="txt txt2">SHOW</span>
+                  <strong>제네시스 모터쇼</strong>
+                  <p>
+                    제네시스만의 독창적인 부스에서, 가장 최신의 제네시스
+                    라인업과 제네시스 브랜드의 럭셔리한 분위기를 직접
+                    경험해보세요.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="img/content3.webp" alt="프로모션 이미지 3" />
+                  <div class="more">
+                    <div class="txt">자세히 보기</div>
+                    <div class="arr">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="txt_wrap">
+                  <span class="txt txt3">NEWS</span>
+                  <strong>PR센터</strong>
+                  <p>
+                    제네시스만의 독창적인 부스에서, 가장 최신의 제네시스
+                    라인업과 제네시스 브랜드의 럭셔리한 분위기를 직접
+                    경험해보세요.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="img/content4.webp" alt="프로모션 이미지 4" />
+                  <div class="more">
+                    <div class="txt">자세히 보기</div>
+                    <div class="arr">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="txt_wrap">
+                  <span class="txt txt4">PROGRAM</span>
+                  <strong>제네시스 구매프로그램</strong>
+                  <p>
+                    제네시스 차량의 견적, 구매상담 신청, 시승 신청 뿐 아니라
+                    제네시스 강남 방문 예약 등 당신만의 제네시스를 찾는 여정을
+                    지원합니다.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="design_area">
+        <div class="inner">
+          <div class="tit_wrap">
+            <em>Our Gallery</em>
+            <strong>Genesis Design</strong>
+            <p>
+              우리는 다양하고 개성 있는 상품들을 만들고 있습니다. 제네시스의
+              차량들은 브랜드와 고객을 이어주는 매개체이며, 개인과 세상을
+              이어주는 연결고리 입니다.
+            </p>
+            <span><a href="#">전체 모델 보기</a></span>
+          </div>
+          <div class="con_wrap">
+            <ul class="cate">
+              <li class="cate_list on">G90</li>
+              <li class="cate_list">G80</li>
+              <li class="cate_list">GV80</li>
+              <li class="cate_list">G70</li>
+              <li class="cate_list">GV70</li>
+            </ul>
+            <div class="swiper designSwiper on">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design1_1.jpg" alt="G90 디자인 사진 1" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>G90 EXTERIOR</em>
+                    <span>G90 외관 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design1_2.webp" alt="G90 디자인 사진 2" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>지-매트릭스(G-MATRIX)</em>
+                    <span>G90 외관 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design1_3.webp" alt="G90 디자인 사진 3" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>G90 Interior</em>
+                    <span>G90 내부 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design1_4.jpg" alt="G90 디자인 사진 4" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>투톤 컬러 인테리어</em>
+                    <span>G90 내부 디자인</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper designSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design2_1.jpg" alt="G80 디자인 사진 1" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>EXTERIOR</em>
+                    <span>G80 외관 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design2_2.jpg" alt="G80 디자인 사진 2" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>Interior</em>
+                    <span>G80 내부 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design2_3.jpg" alt="G80 디자인 사진 3" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>투톤 스티어링 휠</em>
+                    <span>G80 내부 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design2_4.webp" alt="G80 디자인 사진 4" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>전자식 변속 다이얼</em>
+                    <span>G80 내부 디자인</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper designSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design3_1.webp" alt="GV80 디자인 사진 1" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>G-Matrix</em>
+                    <span>GV80 외관 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design3_2.jpg" alt="GV80 디자인 사진 2" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>Interior</em>
+                    <span>GV80 내부 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design3_3.jpg" alt="GV80 디자인 사진 3" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>14.5" 터치스크린 패널</em>
+                    <span>GV80 내부 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design3_4.jpg" alt="GV80 디자인 사진 4" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>터치 타입 공조 패널</em>
+                    <span>GV80 내부 디자인</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper designSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design4_1.webp" alt="G70 디자인 사진 1" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>THE NEW GENESIS G70</em>
+                    <span>G70 외관 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design4_2.webp" alt="G70 디자인 사진 2" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>THE NEW GENESIS G70</em>
+                    <span>G70 내부 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design4_3.jpg" alt="G70 디자인 사진 3" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>THE NEW GENESIS G70</em>
+                    <span>G70 스포츠 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design4_4.jpg" alt="G70 디자인 사진 4" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>제네시스 인포테인먼트 시스템</em>
+                    <span>G70 내부 디자인</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper designSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design5_1.jpg" alt="GV70 디자인 사진 1" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>GENESIS GV70</em>
+                    <span>GV70 외관 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design5_2.webp" alt="GV70 디자인 사진 2" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>GENESIS GV70</em>
+                    <span>GV70 내부 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design5_3.jpg" alt="GV70 디자인 사진 3" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>GENESIS GV70 SPORT</em>
+                    <span>GV70 외관 디자인</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img_wrap">
+                    <img src="img/design5_4.webp" alt="GV70 디자인 사진 4" />
+                  </div>
+                  <div class="txt_wrap">
+                    <em>GENESIS GV70 SPORT</em>
+                    <span>GV70 내부 디자인</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news_area">
+        <div class="inner">
+          <div class="news">
+            <div class="tit_wrap"><h2>NEWS</h2></div>
+            <ul class="news_list">
+              <li>
+                <div class="date">
+                  <span class="day">07</span>
+                  <span class="month">2021.04</span>
+                </div>
+                <h3>
+                  <a href="">제네시스 카페이 개인정보 처리방침 개정 공지</a>
+                </h3>
+                <div class="more">
+                  <a href="#"><img src="img/arr.png" alt="화살표" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="date">
+                  <span class="day">18</span>
+                  <span class="month">2021.03</span>
+                </div>
+                <h3>
+                  <a href="#"
+                    >Genesis Connected Services 개인정보 처리방침 개정 공지</a
+                  >
+                </h3>
+                <div class="more">
+                  <a href="#"><img src="img/arr.png" alt="화살표" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="date">
+                  <span class="day">15</span>
+                  <span class="month">2021.03</span>
+                </div>
+                <h3>
+                  <a href="#"
+                    >Genesis Connected Services 앱 업데이트 및 OS 버전 지원 안내
+                  </a>
+                </h3>
+                <div class="more">
+                  <a href=""><img src="img/arr.png" alt="화살표" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="date">
+                  <span class="day">05</span>
+                  <span class="month">2021.02</span>
+                </div>
+                <h3>
+                  <a href="#"
+                    >GENESIS CONNECTED SERVICES 서비스 일시 중지 안내</a
+                  >
+                </h3>
+                <div class="more">
+                  <a href=""><img src="img/arr.png" alt="화살표" /></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="experience">
+            <div class="tit_wrap">Experience Genesis</div>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="img_wrap">
+                    <img src="img/experience1.jpg" alt="G80 모델 사진 1" />
+                  </div>
+                  <div class="more">
+                    <em>See more</em>
+                    <p>The Electrified G80 is just in time for Earth Day</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="img_wrap">
+                    <img src="img/experience2.jpg" alt="G80 모델 사진 2" />
+                  </div>
+                  <div class="more">
+                    <em>See more</em>
+                    <p>Electrified G80 is setting new standards</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="inner">
+        <div class="top_area">
+          <ul class="link">
+            <li><a href="">사이트맵</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">개인정보취급방침</a></li>
+            <li><a href="">저작권 안내</a></li>
+            <li><a href="">보증 안내</a></li>
+            <li><a href="">자동차 교환 및 환불 중재 규정 안내</a></li>
+            <li><a href="">하자 재발 통보 안내</a></li>
+          </ul>
+          <ul class="sns">
+            <li>
+              <a href="#"
+                ><img src="img/foot_sns1.gif" alt="페이스북 아이콘"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/foot_sns2.gif" alt="유튜브 아이콘"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/foot_sns6.gif" alt="인스타 아이콘"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="bot_area">
+          <h1 class="logo">
+            <a href=""><span class="blind">로고</span></a>
+          </h1>
+          <div class="info">
+            <address>
+              경기 안양시 만안구 전파로 24번길 63(안양동) 오토앤(주)<br />
+              대표 : 최찬욱 | 상호명 : 오토앤 주식회사 | 개인정보관리책임자 :
+              전은석<br />
+              사업자등록번호 : 138-81-72768 | 통신판매업신고번호 :
+              2017-안양만안-0384 <br />
+              고객센터 : 1833-3780 (평일 09:00 ~ 17:00ㅣ점심시간 12:00 ~ 13:00 /
+              토,일 공휴일 휴무) | FAX : 031-462-3387
+            </address>
+            <div class="copy">
+              © Copyright 2022 Hyundai Motor Company. All Rights Reserved.
+            </div>
+          </div>
+          <div class="site">
+            <ul>
+              <li class="tit">
+                <a href="javascript:;">
+                  Family site <i class="fa-solid fa-caret-down"></i
+                ></a>
+              </li>
+              <li><a href="#">제네시스 멤버스 몰</a></li>
+              <li><a href="#">제네시스 멤버스 몰</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
-
-
+    <script
+      src="https://kit.fontawesome.com/20187b4aaf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

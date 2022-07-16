@@ -44,7 +44,7 @@
   background-image: url(../img/publishing_bg2.webp);
 }
 .publishing ul li:nth-child(3) {
-  background-image: url(../img/publishing_bg3.jpg);
+  background-image: url(../img/publishing_bg3.webp);
 }
 .publishing ul li .txt_wrap {
   width: 100%;
