@@ -49,8 +49,8 @@ ScrollTrigger.create({
 
 ScrollTrigger.matchMedia({
   "(min-width: 800px) and (max-width: 2640px)": function () {
-    gsap.to(".publishing ul", {
-      xPercent: -150,
+    gsap.to(".publishing > ul", {
+      xPercent: -200,
       scrollTrigger: {
         trigger: ".publishing",
         pinSpacing: true,
